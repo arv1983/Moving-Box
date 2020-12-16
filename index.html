@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+
+        <script>
+            'use strict';
+            let boxTop = 200;
+            let boxLeft = 200;
+            document.addEventListener('keydown', (event) => {
+                const keyName = event.key;
+                console.log('keydown event\n\n' + 'key: ' + keyName);
+                if (keyName == 'ArrowDown') {
+                    boxTop += 10;
+                    console.log(boxTop)
+                }
+                if (keyName == 'ArrowUp') {
+                    boxTop -= 10;
+                    console.log(boxTop)
+                }
+                if (keyName == 'ArrowLeft') {
+                    boxLeft -= 10;
+                    console.log(boxTop)
+                }
+                if (keyName == 'ArrowRight') {
+                    boxLeft += 10;
+                    console.log(boxTop)
+                }
+                document.getElementById("box").style.top = boxTop + "px";
+                document.getElementById("box").style.left = boxLeft + "px";
+            });
+        </script>
+    </head>
+
+    <body>
+    </body>
+
+    </html>
+
+    <body>
+        <div id="box"></div>
+    </body>
+
+</html>
